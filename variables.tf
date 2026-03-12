@@ -98,7 +98,7 @@ variable "db_route_table_tags" {
 
 variable "is_peering_required" {
   type = bool
-  default = true
+  default = false
 }
 
 variable "acceptor_vpc_id" {
