@@ -2,18 +2,18 @@ output "azs" {
   value = local.az_names
 }
 
-output "vpcID" {
+output "vpc_id" {
   value = aws_vpc.main.id
 }
 
-output "public_subnetID" {
+output "public_subnet_id" {
   value = aws_subnet.public[*].id
 }
 
-output "private_subnetID" {
+output "private_subnet_id" {
   value = aws_subnet.private[*].id
 }
 
-output "db_subnetID" {
+output "db_subnet_id" {
   value = aws_subnet.db[*].id
 }
